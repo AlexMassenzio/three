@@ -48,7 +48,7 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 const loader = new GLTFLoader();
 let mixer;
-loader.load("/models/doughnut.glb", function (gltf) {
+loader.load("/models/doughnut.gltf", function (gltf) {
   scene.add(gltf.scene);
   mixer = new THREE.AnimationMixer(gltf.scene);
   const clips = gltf.animations;
